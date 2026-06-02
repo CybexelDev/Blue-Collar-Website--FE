@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import JobSearchHero from './Layout/Home/Hero/HomeBanner'
+import Featured from './Components/FeaturedJobs/Featured'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
     <>
       <Navbar/>
       <JobSearchHero/>
+      <Featured /> 
     </>
   )
 }
