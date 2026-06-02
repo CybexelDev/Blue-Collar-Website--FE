@@ -15,7 +15,7 @@ const [openLang, setOpenLang] = useState(false);
       </div>
 
       {/* Nav Links */}
-      <ul className="flex items-center gap-8 text-[#52525B] font-medium text-[16px] leading-[24px]">
+      <ul className="flex items-center gap-8 text-[#52525B] font-medium text-[16px] inter leading-[24px]">
 
         <li>
           <button className="bg-blue-600 text-white px-5 py-2 rounded-full">
