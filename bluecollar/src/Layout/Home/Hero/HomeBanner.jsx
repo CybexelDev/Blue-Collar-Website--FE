@@ -1,6 +1,8 @@
 import React from "react";
+import Searchbox from "../../../Components/Searchbox/Searchbox";
 import { Search, MapPin, Briefcase } from "lucide-react";
 import bannerImg from "../../../assets/images/bannerimg.jpg"
+
 function JobSearchHero() {
   return (
   <section
@@ -27,6 +29,9 @@ function JobSearchHero() {
 </div>
 
         {/* Search Box */}
+
+        <Searchbox />
+
 <div
   className="
     mt-12
