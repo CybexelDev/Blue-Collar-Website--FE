@@ -1,8 +1,13 @@
 import React from 'react'
+import Searchsection from '../../Layout/Companies/SearchsSection/Searchsection'
+import Navbar from '../../Components/Navbar/Navbar'
 
 function Companies() {
   return (
-    <div>Companies</div>
+    <div>
+        <Navbar />  
+      <Searchsection />
+    </div>
   )
 }
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
 import JobSearchHero from '../../Layout/Home/Hero/HomeBanner'
 import Featured from '../../Components/FeaturedJobs/Featured'
 import Category from '../../Layout/Home/Category/Category'
@@ -16,6 +15,6 @@ function Home() {
       <Ad />
     </>
   )
-
+}
 
 export default Home
