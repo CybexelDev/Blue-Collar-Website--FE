@@ -15,7 +15,7 @@ const Category = () => {
     return (
 
         <div className='w-full h-[350px] bg-[#f5f7ff]'>
-            <div className=' px-[80px] py-[50px] flex justify-between'>
+            <div className='px-[80px] py-[50px] flex justify-between'>
                 <div>
                     <h3 className="text-[30px]  font-[1000] manrope">Popular Categories</h3>
                     <p className="text-[16px] text-[#414754] inter">Find the right path for your skills</p>
