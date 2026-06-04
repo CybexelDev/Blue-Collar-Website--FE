@@ -1,12 +1,12 @@
 import React from 'react'
-import Searchsection from '../../Layout/Companies/SearchsSection/Searchsection'
 import Navbar from '../../Components/Navbar/Navbar'
+import JobSearchFilter from '../../Layout/CompaniesListing/SearchFilteringBanner/SearchFilteringBanner'
 
 function Companies() {
   return (
     <div>
-        <Navbar />  
-      <Searchsection />
+      <Navbar />  
+      <JobSearchFilter />
     </div>
   )
 }
