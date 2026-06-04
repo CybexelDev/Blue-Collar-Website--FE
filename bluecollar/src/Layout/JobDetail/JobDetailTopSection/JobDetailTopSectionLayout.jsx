@@ -86,7 +86,7 @@ lg:col-span-2    animate-fadeUp
           </div>
 
           {/* ── Right Column ── */}
-<div className="lg:col-span-1 flex flex-col gap-7  xl:ml-[-5px]">
+<div className="lg:col-span-1 flex flex-col gap-7  xl:ml-[-5px] ">
             {/* Salary Card */}
 <div
   className="
