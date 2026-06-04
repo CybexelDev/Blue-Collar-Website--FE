@@ -16,8 +16,8 @@ function App() {
 
   return (
     <>
-      {/* <Home /> */}
-      <Companies />
+      <Home />
+      {/* <Companies /> */}
 
   
 
