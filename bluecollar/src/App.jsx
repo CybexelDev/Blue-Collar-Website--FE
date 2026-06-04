@@ -10,6 +10,7 @@ import Home from './Pages/Home/Home'
 import JobSearchHero from './Layout/Home/Hero/HomeBanner'
 import Jobdetail from "./Pages/Jobdetail/Jobdetail";
 import Saved from "./Pages/Saved/Saved";
+import CompanyDetail from "./Pages/CompanyDetail/CompanyDetail";
 
 
 
@@ -24,6 +25,7 @@ function App() {
       <Saved />
 
   
+      <CompanyDetail/>
 
     </>
   );

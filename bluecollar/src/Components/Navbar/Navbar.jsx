@@ -7,7 +7,7 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
 const [openLang, setOpenLang] = useState(false);
   return (
-    <nav className="w-full bg-[#f5f5f5] px-15 py-4 flex items-center justify-between shadow-sm inter">
+    <nav className="w-full bg-[#F8F9FACC] px-15 py-4 flex items-center justify-between shadow-sm inter">
 
       {/* Logo */}
       <div className="text-2xl font-bold text-black">

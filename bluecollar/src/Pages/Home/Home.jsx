@@ -9,12 +9,16 @@ import Footer from '../../Components/Footer/Footer'
 function Home() {
    return (
     <>
+    <div className='overflow-x-hidden'>
+
       <Navbar/>
       <JobSearchHero/>
       <Category />
       <Featured /> 
       <Ad />
       <Footer/>
+          </div>
+
     </>
   )
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Searchbox from "../../../Components/Searchbox/Searchbox";
 import { Search, MapPin, Briefcase } from "lucide-react";
-import bannerImg from "../../../assets/images/bannerimg.jpg"
+import bannerImg from "../../../assets/images/banner/bannerimg.jpg"
 
 function JobSearchHero() {
   return (
