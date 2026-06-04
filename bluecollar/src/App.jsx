@@ -8,6 +8,9 @@ import heroImg from './assets/hero.png'
 import Navbar from './Components/Navbar/Navbar'
 import Home from './Pages/Home/Home'
 import JobSearchHero from './Layout/Home/Hero/HomeBanner'
+import JobDetailTopSection from "./Layout/JobDetail/JobDetailTopSection/JobDetailTopSectionLayout";
+import Jobdetail from "./Pages/Jobdetail/Jobdetail";
+import CompanyDetail from "./Pages/CompanyDetail/CompanyDetail";
 
 
 
@@ -17,9 +20,8 @@ function App() {
   return (
     <>
       {/* <Home /> */}
-      <Companies />
-
-  
+      {/* <Companies /> */}
+      <CompanyDetail/>
 
     </>
   );

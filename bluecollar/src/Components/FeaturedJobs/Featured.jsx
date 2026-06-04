@@ -27,7 +27,7 @@ const jobs = [
   }
 ];
 
-export default function Featured() {
+export default function Featured({heading="Featured Jobs"}) {
   return (
     <section className="py-10 px-[80px]">
       <style>{`
@@ -146,7 +146,7 @@ export default function Featured() {
         {/* Header */}
         <div className="flex justify-between items-center mb-12">
           <h2 className="leading-[36px] text-[30px] font-[800] text-[#191C1D] manrope">
-            Featured Jobs
+            {heading}
           </h2>
 
           <button className="text-[#005BBF] font-[700] inter text-[16px] leading-[26px] cursor-pointer hover:text-[#003d7a] transition-colors duration-300">
