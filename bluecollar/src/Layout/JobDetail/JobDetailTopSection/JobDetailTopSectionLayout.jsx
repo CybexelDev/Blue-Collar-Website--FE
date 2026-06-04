@@ -27,7 +27,7 @@ const MapPin = () => (
 
 export default function JobDetailTopSection() {
   return (
-<div className="min-h-screen flex items-start justify-center px-4 md:px-[80px] py-5 pt-10">      <div className="w-full  bg-white rounded-2xl  overflow-hidden">
+<div className="flex items-start justify-center px-4 md:px-[80px] py-5 pt-10">      <div className="w-full  bg-white rounded-2xl  overflow-hidden">
 <div className="flex flex-col lg:flex-row ">
           {/* ── Left Column ── */}
 <div

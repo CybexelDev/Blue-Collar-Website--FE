@@ -97,7 +97,7 @@ export default function Bottomsection() {
           {/* Responsibilities */}
           <div className="bg-[#F3F4F5] rounded-[24px] p-8">
             <h2 className="text-[24px] manrope font-[750] text-[#191C1D] leading-[32px] mb-6 ">
-              Core Responsibilities
+              Core Responsibilitiessssss
             </h2>
 
             <div className="space-y-[10px]">
@@ -128,7 +128,7 @@ export default function Bottomsection() {
               {skills.map((skill, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-[#C1C6D626] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] rounded-[16px] p-5"
+                  className="bg-white border cursor-pointer border-[#C1C6D626] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] rounded-[16px] p-5"
                 >
                   <div className="flex items-start gap-4">
                     <div className="text-blue-600 mt-1">{skill.icon}</div>
