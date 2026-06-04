@@ -8,6 +8,8 @@ import heroImg from './assets/hero.png'
 import Navbar from './Components/Navbar/Navbar'
 import Home from './Pages/Home/Home'
 import JobSearchHero from './Layout/Home/Hero/HomeBanner'
+import Jobdetail from "./Pages/Jobdetail/Jobdetail";
+import Saved from "./Pages/Saved/Saved";
 
 
 
@@ -16,8 +18,10 @@ function App() {
 
   return (
     <>
-      <Home />
+      {/* <Home /> */}
       {/* <Companies /> */}
+      {/* <Jobdetail /> */}
+      <Saved />
 
   
 
