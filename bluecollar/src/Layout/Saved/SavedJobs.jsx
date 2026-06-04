@@ -12,7 +12,6 @@ export default function SavedJobs() {
   return (
     <div className="w-full bg-white min-h-screen">
       <div className="py-10 px-[80px]">
-        {/* Header */}
         <div>
           <h1 className="text-[32px] font-bold text-[#18191C]">
             Saved Jobs
