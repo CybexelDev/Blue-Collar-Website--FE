@@ -21,11 +21,11 @@ function App() {
     <>
       {/* <Home /> */}
       {/* <Companies /> */}
-      {/* <Jobdetail /> */}
-      <Saved />
+      <Jobdetail />
+      {/* <Saved /> */}
 
   
-      <CompanyDetail/>
+      {/* <CompanyDetail/> */}
 
     </>
   );

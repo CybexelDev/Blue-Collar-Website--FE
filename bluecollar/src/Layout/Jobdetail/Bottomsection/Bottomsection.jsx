@@ -90,7 +90,7 @@ export default function Bottomsection() {
           transform: translateY(0);
         }
       `}</style>
-    <div className="py-10 px-[80px]">
+    <div className=" px-[80px]">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* LEFT SIDE */}
         <div className="lg:col-span-2">
@@ -157,8 +157,8 @@ export default function Bottomsection() {
         </div>
 
         {/* RIGHT SIDE */}
-        <div>
-          <div className="bg-white border border-gray-200 rounded-[24px] inter p-6 shadow-sm">
+        <div >
+          <div className=" border border-gray-200 rounded-[24px] inter p-6 shadow-sm ">
             <h3 className="text-[24px] leading-[25px] font-[700] mb-[34px]">
               Dominos
             </h3>

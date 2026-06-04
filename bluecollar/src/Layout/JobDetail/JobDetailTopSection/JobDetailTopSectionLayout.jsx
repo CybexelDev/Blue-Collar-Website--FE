@@ -27,13 +27,11 @@ const MapPin = () => (
 
 export default function JobDetailTopSection() {
   return (
-<div className="min-h-screen flex items-start justify-center px-4 md:px-[80px] py-5 pt-10">      <div className="w-full  bg-white rounded-2xl  overflow-hidden">
-<div className="flex flex-col lg:flex-row ">
-          {/* ── Left Column ── */}
+<div className=" flex items-start justify-center px-4 md:px-[80px]  pt-10">      <div className="w-full  bg-white rounded-2xl  overflow-hidden">
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">          {/* ── Left Column ── */}
 <div
   className="
-    flex-1
-    animate-fadeUp
+lg:col-span-2    animate-fadeUp
   "
 >            {/* Header */}
 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-5 text-center sm:text-left">       
@@ -88,7 +86,7 @@ export default function JobDetailTopSection() {
           </div>
 
           {/* ── Right Column ── */}
-<div className="w-full lg:w-[418px] lg:p-0 p-6 flex flex-col gap-7 ">
+<div className="lg:col-span-1 flex flex-col gap-7  xl:ml-[-5px]">
             {/* Salary Card */}
 <div
   className="

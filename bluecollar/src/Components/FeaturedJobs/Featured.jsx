@@ -53,4 +53,3 @@ export default function Featured({heading="Featured Jobs"}) {
   );
 }
 
-export default Featured;
