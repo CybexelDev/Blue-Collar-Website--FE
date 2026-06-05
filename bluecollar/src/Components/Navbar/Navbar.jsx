@@ -1,47 +1,93 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Bell, MessageSquare } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
 const [openLang, setOpenLang] = useState(false);
+const navigate=useNavigate()
   return (
-    <nav className="w-full bg-[#f5f5f5] px-15 py-4 flex items-center justify-between shadow-sm inter">
-
+<nav className="w-full bg-[#F8F9FACC] px-4 lg:px-15 py-4 flex items-center justify-between shadow-sm inter">
       {/* Logo */}
       <div className="text-2xl font-bold text-black">
         TradeCraft
       </div>
 
       {/* Nav Links */}
-      <ul className="flex items-center gap-8 text-[#52525B] font-medium text-[16px] inter leading-[24px]">
+      <ul className="hidden lg:flex  items-center gap-8 text-[#52525B] font-medium text-[16px] inter leading-[24px]">
 
-        <li>
-          <button className="bg-blue-600 text-white px-5 py-2 rounded-full">
-            {t("home")}
-          </button>
-        </li>
+  <li>
+    <NavLink
+      to="/"
+      className={({ isActive }) =>
+        isActive
+          ? "bg-blue-600 text-white px-5 py-2 rounded-full"
+          : "hover:text-black"
+      }
+    >
+      {t("home")}
+    </NavLink>
+  </li>
 
-        <li className="hover:text-black cursor-pointer">
-          {t("companies")}
-        </li>
+  <li>
+    <NavLink
+      to="/companies"
+      className={({ isActive }) =>
+        isActive
+          ? "bg-blue-600 text-white px-5 py-2 rounded-full"
+          : "hover:text-black"
+      }
+    >
+      {t("companies")}
+    </NavLink>
+  </li>
 
-        <li className="hover:text-black cursor-pointer">
-          {t("jobs")}
-        </li>
+  <li>
+    <NavLink
+      to="/jobs"
+      className={({ isActive }) =>
+        isActive
+          ? "bg-blue-600 text-white px-5 py-2 rounded-full"
+          : "hover:text-black"
+      }
+    >
+      {t("jobs")}
+    </NavLink>
+  </li>
 
-        <li className="hover:text-black cursor-pointer">
-          {t("saved")}
-        </li>
+  <li>
+    <NavLink
+      to="/saved"
+      className={({ isActive }) =>
+        isActive
+          ? "bg-blue-600 text-white px-5 py-2 rounded-full"
+          : "hover:text-black"
+      }
+    >
+      {t("saved")}
+    </NavLink>
+  </li>
 
-        <li className="hover:text-black cursor-pointer">
-          {t("applied")}
-        </li>
-      </ul>
+  <li>
+    <NavLink
+      to="/applied"
+      className={({ isActive }) =>
+        isActive
+          ? "bg-blue-600 text-white px-5 py-2 rounded-full"
+          : "hover:text-black"
+      }
+    >
+      {t("applied")}
+    </NavLink>
+  </li>
+
+</ul>
 
       {/* Right Section */}
-      <div className="flex items-center gap-6">
+      <div className="hidden lg:flex items-center gap-6">
 
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 2C10.1435 2 8.363 2.7375 7.05024 4.05025C5.73749 5.36301 4.99999 7.14348 4.99999 9V12.528C5.00014 12.6831 4.96419 12.8362 4.89499 12.975L3.17799 16.408C3.09412 16.5757 3.05451 16.7621 3.06294 16.9494C3.07137 17.1368 3.12754 17.3188 3.22614 17.4783C3.32473 17.6379 3.46246 17.7695 3.62626 17.8608C3.79005 17.9521 3.97447 18 4.16199 18H19.838C20.0255 18 20.2099 17.9521 20.3737 17.8608C20.5375 17.7695 20.6753 17.6379 20.7738 17.4783C20.8724 17.3188 20.9286 17.1368 20.937 16.9494C20.9455 16.7621 20.9059 16.5757 20.822 16.408L19.106 12.975C19.0365 12.8362 19.0002 12.6832 19 12.528V9C19 7.14348 18.2625 5.36301 16.9497 4.05025C15.637 2.7375 13.8565 2 12 2ZM12 21C11.3793 21.0003 10.7739 20.8081 10.267 20.4499C9.76016 20.0917 9.37688 19.5852 9.16999 19H14.83C14.6231 19.5852 14.2398 20.0917 13.733 20.4499C13.2261 20.8081 12.6206 21.0003 12 21Z" fill="black"/>
@@ -140,7 +186,84 @@ const [openLang, setOpenLang] = useState(false);
           {t("login")}
         </button>
       </div>
+      {/* Mobile Bottom Nav */}
+<div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+  <div className="grid grid-cols-5 py-2">
+
+    <NavLink
+      to="/"
+      className={({ isActive }) =>
+        `flex flex-col items-center gap-1 py-2 ${
+          isActive ? "text-[#005BBF]" : "text-[#6B7280]"
+        }`
+      }
+    >
+      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M3 10.5L12 3L21 10.5V21H14V15H10V21H3V10.5Z" />
+      </svg>
+      <span className="text-[11px]">Home</span>
+    </NavLink>
+
+    <NavLink
+      to="/companies"
+      className={({ isActive }) =>
+        `flex flex-col items-center gap-1 py-2 ${
+          isActive ? "text-[#005BBF]" : "text-[#6B7280]"
+        }`
+      }
+    >
+      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M4 4H20V20H4V4ZM8 8V10H10V8H8ZM14 8V10H16V8H14Z" />
+      </svg>
+      <span className="text-[11px]">Companies</span>
+    </NavLink>
+
+    <NavLink
+      to="/jobs"
+      className={({ isActive }) =>
+        `flex flex-col items-center gap-1 py-2 ${
+          isActive ? "text-[#005BBF]" : "text-[#6B7280]"
+        }`
+      }
+    >
+      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8 4H16V7H21V20H3V7H8V4ZM10 6V7H14V6H10Z" />
+      </svg>
+      <span className="text-[11px]">Jobs</span>
+    </NavLink>
+
+    <NavLink
+      to="/saved"
+      className={({ isActive }) =>
+        `flex flex-col items-center gap-1 py-2 ${
+          isActive ? "text-[#005BBF]" : "text-[#6B7280]"
+        }`
+      }
+    >
+      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M6 3H18V21L12 17L6 21V3Z" />
+      </svg>
+      <span className="text-[11px]">Saved</span>
+    </NavLink>
+
+    <NavLink
+      to="/applied"
+      className={({ isActive }) =>
+        `flex flex-col items-center gap-1 py-2 ${
+          isActive ? "text-[#005BBF]" : "text-[#6B7280]"
+        }`
+      }
+    >
+      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M9 12L11 14L15 10M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2 22 6.477 22 12 17.523 22 12 22Z" />
+      </svg>
+      <span className="text-[11px]">Applied</span>
+    </NavLink>
+
+  </div>
+</div>
     </nav>
+    
   );
 };
 

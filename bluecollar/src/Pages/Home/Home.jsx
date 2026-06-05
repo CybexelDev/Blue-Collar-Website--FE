@@ -11,6 +11,8 @@ import Navbar from '../../Components/Navbar/Navbar'
 function Home() {
    return (
     <>
+    <div className='overflow-x-hidden'>
+
       <Navbar/>
       <JobSearchHero/>
       <Category />
@@ -19,6 +21,8 @@ function Home() {
       <NearByCompanies/>
       <AdsSection/>
       <Footer />
+
+    </div>
     </>
   )
 }
