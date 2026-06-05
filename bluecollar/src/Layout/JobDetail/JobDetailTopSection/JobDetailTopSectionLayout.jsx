@@ -27,7 +27,7 @@ const MapPin = () => (
 
 export default function JobDetailTopSection() {
   return (
-<div className=" flex items-start justify-center px-4 md:px-[80px]  pt-10">      <div className="w-full  bg-white rounded-2xl  overflow-hidden">
+<div className=" flex items-start justify-center px-4 md:px-[80px] lg:py-15 pt-10">      <div className="w-full  bg-white rounded-2xl  overflow-hidden">
 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">          {/* ── Left Column ── */}
 <div
   className="
@@ -68,8 +68,8 @@ lg:col-span-2    animate-fadeUp
             </div>
 
             {/* Job Description */}
-         <section className="lg:mb-9 mb-5"> 
-            <h2 className="text-[24px] manrope font-bold text-[#191C1D] lg:mb-3 mb-1  text-center lg:text-left">Job Description</h2>
+         <section className="lg:mb-2 mb-5"> 
+            <h2 className="text-[24px] manrope font-bold text-[#191C1D] lg:mb-[4px] mb-1  text-center lg:text-left">Job Description</h2>
           <p className="text-[#414754] font-[400] text-[18px]  mb-3leading-[32px] inter whitespace-pre-line lg:pr-8 p-4"> We are looking for energetic and responsible Delivery Partners to join the Domino's team. You will be responsible for delivering orders safely and on time while providing a great customer experience.<br/>
              As part of the Domino's team, you will work in a fast-paced environment with flexible working hours and attractive earning opportunities. We value punctuality, customer-friendly attitude, and commitment to service. </p> 
              </section>

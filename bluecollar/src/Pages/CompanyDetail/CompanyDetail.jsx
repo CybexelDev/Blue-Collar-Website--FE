@@ -3,13 +3,16 @@ import CompanyDetailTop from '../../Layout/CompanyDetail/CompanyDetailLayout'
 import Navbar from '../../Components/Navbar/Navbar'
 import CompanyTabs from '../../Components/Companydetail/CompanyTabs'
 import DepartmentSection from '../../Components/Companydetail/DepartmentSection'
+import CompanyOverview from '../../Components/Companydetail/CompanyOverview'
 import { useState } from 'react'
+import Footer from '../../Components/Footer/Footer'
+import CompanyJobs from '../../Components/Companydetail/CompanyJobs'
 function CompanyDetail() {
       const [activeTab, setActiveTab] = useState("overview");
 
   return (
      <div>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <CompanyDetailTop />
 
@@ -21,11 +24,12 @@ function CompanyDetail() {
       </div>
       <DepartmentSection/>
 
-      {/* {activeTab === "overview" ? (
+      {activeTab === "overview" ? (
         <CompanyOverview />
       ) : (
         <CompanyJobs />
-      )} */}
+      )}
+      <Footer/>
     </div>
   )
 }
