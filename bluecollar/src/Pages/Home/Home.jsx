@@ -6,6 +6,7 @@ import Ad from '../../Layout/Home/Ad/Ad'
 import Footer from '../../Components/Footer/Footer'
 import AdsSection from '../../Components/Home/AdsSection/AdsSection'
 import NearByCompanies from '../../Layout/Home/NearByCompanies/NearByCompanies'
+import Navbar from '../../Components/Navbar/Navbar'
 
 function Home() {
    return (

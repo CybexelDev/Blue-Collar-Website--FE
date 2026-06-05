@@ -2,7 +2,7 @@ import React from "react";
 
 import dominos from "../../assets/Images/featured/img2.png";
 import img5 from "../../assets/Images/featured/img5.png";
-import img6 from "../../assets/Images/featured/img6.png";
+import img6 from "../../assets/Images/featured/img6.jpg";
 import JobCard from "../Jobcard/Jobcard";
 
 const jobs = [
