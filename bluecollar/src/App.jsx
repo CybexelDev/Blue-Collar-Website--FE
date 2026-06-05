@@ -14,9 +14,9 @@ function App() {
 
   return (
     <>
-      {/* <Home /> */}
+      <Home />
       {/* <Companies /> */}
-      <JobListing />
+      {/* <JobListing /> */}
     </>
   );
 }
