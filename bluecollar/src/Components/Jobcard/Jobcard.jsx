@@ -3,9 +3,9 @@ import { Bookmark } from "lucide-react";
 
 
 
-function JobCard({ job }) {
+function JobCard({ job, click }) {
   return (
-     <>
+    <>
       <style>{`
         .apply-btn {
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -43,8 +43,9 @@ function JobCard({ job }) {
           transform: translateY(0);
         }
       `}</style>
-   <div
-  className="
+      <div
+        onClick={click}
+        className="
     group
     relative
     overflow-hidden
@@ -57,19 +58,19 @@ function JobCard({ job }) {
     hover:border-[#005BBF]
     hover:shadow-[0_20px_40px_rgba(0,91,191,0.15)]
   "
->
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-br from-[#005BBF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#005BBF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
-  {/* Content */}
-  <div className="relative z-10">
-    {/* Top */}
-    <div className="flex justify-between items-start">
-      <div className="flex gap-[14px]">
-        <img
-          src={job.logo}
-          alt={job.title}
-          className="
+        {/* Content */}
+        <div className="relative z-10">
+          {/* Top */}
+          <div className="flex justify-between items-start">
+            <div className="flex gap-[14px]">
+              <img
+                src={job.logo}
+                alt={job.title}
+                className="
             w-[57px]
             h-[57px]
             rounded-xl
@@ -78,57 +79,57 @@ function JobCard({ job }) {
             duration-300
             group-hover:scale-105
           "
-        />
+              />
 
-        <div>
-          <h3 className="font-[700] text-[20px] lg:text-[14px] xl:text-[20px] text-[#0F172A] leading-[25px] inter">
-            {job.title}
-          </h3>
+              <div>
+                <h3 className="font-[700] text-[20px] lg:text-[14px] xl:text-[20px] text-[#0F172A] leading-[25px] inter">
+                  {job.title}
+                </h3>
 
-          <p className="text-[#1A1A1A] text-[12px] leading-[150%] font-[400] manrope">
-            {job.company}
-          </p>
-        </div>
-      </div>
+                <p className="text-[#1A1A1A] text-[12px] leading-[150%] font-[400] manrope">
+                  {job.company}
+                </p>
+              </div>
+            </div>
 
-      <Bookmark
-        size={20}
-        strokeWidth={1.5}
-        className="
+            <Bookmark
+              size={20}
+              strokeWidth={1.5}
+              className="
           cursor-pointer
           transition-all
           duration-300
           group-hover:text-[#005BBF]
           group-hover:scale-110
         "
-      />
-    </div>
+            />
+          </div>
 
-    {/* Location */}
-    <div className="flex items-center gap-2 mt-6">
-      <svg
-        width="11"
-        height="14"
-        viewBox="0 0 11 14"
-        fill="none"
-      >
-        {/* path */}
-      </svg>
+          {/* Location */}
+          <div className="flex items-center gap-2 mt-6">
+            <svg
+              width="11"
+              height="14"
+              viewBox="0 0 11 14"
+              fill="none"
+            >
+              {/* path */}
+            </svg>
 
-      <span className="text-[14px] font-[400] inter leading-[20px] text-[#64748B] group-hover:text-[#005BBF] transition-colors duration-300">
-        Villupuram Main Road, Opp. Collectorate
-      </span>
-    </div>
+            <span className="text-[14px] font-[400] inter leading-[20px] text-[#64748B] group-hover:text-[#005BBF] transition-colors duration-300">
+              Villupuram Main Road, Opp. Collectorate
+            </span>
+          </div>
 
-    {/* Details */}
-    <div className="flex items-center gap-4 mt-5 text-[12px] manrope leading-[150%]">
-      <span className="text-[#1A1A1A] font-[400]">
-        322 Applicants
-      </span>
+          {/* Details */}
+          <div className="flex items-center gap-4 mt-5 text-[12px] manrope leading-[150%]">
+            <span className="text-[#1A1A1A] font-[400]">
+              322 Applicants
+            </span>
 
-      <div>
-        <span
-          className="
+            <div>
+              <span
+                className="
             text-[#024EC5]
             font-[700]
             transition-all
@@ -136,25 +137,25 @@ function JobCard({ job }) {
             group-hover:text-[#0041a6]
             group-hover:font-[800]
           "
-        >
-          ₹15k - ₹20k
-        </span>
+              >
+                ₹15k - ₹20k
+              </span>
 
-        <span className="text-[#1A1A1A] font-[400]">
-          / Month
-        </span>
-      </div>
-    </div>
+              <span className="text-[#1A1A1A] font-[400]">
+                / Month
+              </span>
+            </div>
+          </div>
 
-    {/* Button */}
-<button className="apply-btn w-full
+          {/* Button */}
+          <button className="apply-btn w-full
  mt-6 bg-[#005BBF] text-white
  cursor-pointer py-[8px] rounded-[100px]
   inter text-[16px] leading-[24px]
    font-[600]"> Apply Now </button>
-  </div>
-</div>
-</>
+        </div>
+      </div>
+    </>
   );
 }
 
